@@ -79,6 +79,26 @@ public class Main {
                         System.out.println("Catiddad de productos actualizados");
                     }
 
+                    break;
+
+                case 4 :
+
+                    System.out.print("Ingrese el nombre del producto a eliminar: ");
+                    String nombreEliminar = scanner.nextLine();
+                    int indexEliminar = nombreProductos.indexOf(nombreEliminar);
+                    if (indexEliminar== -1){
+                        System.out.println("Producto no encontrado.");
+                    }else {
+                        nombreProductos.remove(indexEliminar);
+                        cantidadesProductos.remove(indexEliminar);
+                        precioProductos.remove(indexEliminar);
+                        System.out.println("Producto eliminado con éxito.");
+                    }
+
+                    break;
+                    
+
+
 
 
 
