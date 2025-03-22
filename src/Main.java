@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -6,6 +7,9 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         double Iva = 0.12;
+        ArrayList<String> nombreProductos = new ArrayList<>();
+        ArrayList<Integer>cantidadesProductos = new ArrayList<>();
+        ArrayList<Double>precioProductos = new ArrayList<>();
 
         while (true){
 
