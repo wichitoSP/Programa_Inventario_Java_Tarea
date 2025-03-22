@@ -21,6 +21,30 @@ public class Main {
             System.out.println("5.)Salir");
             System.out.println("Seleccione una opción del menu: ");
             int opcion = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (opcion){
+
+                case 1 :
+                    System.out.print("Ingrese el nombre del producto: ");
+                    String nombre = scanner.nextLine();
+                    System.out.print("ingrese la cantidad del producto:");
+                    int cantidad = scanner.nextInt();
+                    System.out.print("Ingrese el Precio del producto: ");
+                    double precio = scanner.nextDouble();
+                    scanner.nextLine();
+
+                    nombreProductos.add(nombre);
+                    cantidadesProductos.add(cantidad);
+                    precioProductos.add(precio);
+
+                    System.out.println("Productos agregados correctamente.");
+
+                    break;
+
+                    
+
+            }
         }
 
 
