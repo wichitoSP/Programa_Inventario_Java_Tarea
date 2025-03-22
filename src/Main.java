@@ -96,7 +96,14 @@ public class Main {
                     }
 
                     break;
-                    
+
+                case 5 :
+                        System.out.println("Saliedo del programa......");
+                        scanner.close();
+                        return;
+
+                default:
+                    System.out.println("Opción no valida.Intente nuevamente");
 
 
 
