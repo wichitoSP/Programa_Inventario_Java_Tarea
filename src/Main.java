@@ -42,7 +42,31 @@ public class Main {
 
                     break;
 
-                    
+                case 2 :
+
+                    if (nombreProductos.isEmpty()){
+                        System.out.println("No hay productos en el inventario.");
+                    }else {
+
+                        System.out.println("/n ***Lista de Productos");
+
+                        for (int i = 0; i <nombreProductos.size();i++){
+                            System.out.println("Producto: " + nombreProductos.get(i) +
+                                    ", Cantidad: " + cantidadesProductos.get(i) +
+                                    ", Precio: Q" + precioProductos.get(i) +
+                                    ", Precio con IVA: Q" + (precioProductos.get(i) * (1 + Iva)));
+                        }
+
+                        break;
+
+                        
+
+
+
+                    }
+
+
+
 
             }
         }
